@@ -1,0 +1,238 @@
+/* colors:
+ * eb3410 (orange),
+ * 7099a5 (green) , 
+ * ffffff (green ungesaettigt) 
+ * ffffff (orange, ungesaettigt)
+ *
+ * */
+/* reset */
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, form, textarea, input, p {
+	margin:0;padding:0;
+}
+.simple {
+	text-decoration:none;
+	color:#000000;
+}
+ul li {
+	list-style:none;
+}
+
+/*========================= MAIN ============================*/
+html {
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+body { 
+	background: #ffffff;
+	font:11px FreeSans, sans-serif; /* basispercentage -> 10px */line-height: 1.2;color:#000000;
+}
+#wrapper {
+	max-width:1200px;
+	margin: 5px auto;
+	border: 5px solid royalblue;
+	background: #ffffff;
+
+}
+#contentwrapper {
+  position: relative;
+  left: 0px;
+}
+#content {
+	float:left;
+	text-align:justify;
+	max-width: 1185px;
+  width: 95%;
+	background: transparent;
+	padding-bottom: 50px;
+	padding-left:20px;
+	padding-top:20px;
+	padding-right:20px;
+	font-size: 1.4em; /* 12px */;
+	font-family:sans-serif;
+}
+
+#mainpic{
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+  width: 50%;
+  background: transparent;
+}
+
+/*========================= HEADER ============================*/
+#header {
+	position:relative;height: 75px;	
+	background: burlywood no-repeat left top;	
+	/*** z-index:10000 ***/
+	z-index:1000;
+	border-bottom: 5px solid royalblue;
+}
+
+
+#header img#logo {
+	position:absolute; 
+	top: 7px;
+	left:7px;
+	border:none;	background:transparent;
+}
+
+/* mainnav */
+#mainnav {
+		position: absolute;
+		left: 100px;
+		bottom:0px;
+		max-width: 800px; 		
+}
+/* DROPDOWN CSS */
+
+#nav, #nav ul { /* all lists */
+	padding: 0;	margin: 0;
+	list-style: none;
+	line-height: 1;
+	position: relative;
+}
+#nav a {
+	display: block;
+	padding: 10px 10px 10px 20px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	border-bottom:none;
+	font-weight:bold;
+}
+
+#nav ul li a {
+	padding: 8px 10px;
+	width: 142px;
+	text-transform: none;
+	color: #000000;
+	//background-image: none;
+	font-size: 1em;
+	border-top: 2px solid #ffffff;
+	font-weight:bold;
+}
+#nav li { /* all list items */
+	float: left; 
+	margin:0;
+	padding:0;
+	width: auto;
+	position: relative;
+}
+
+#nav li ul { /* second-level lists */
+	position: absolute;
+	left: -999em; 
+	/*** z-index: 9500; ***/
+	z-index: 950;
+	width: 160px;
+	background-color: royalblue;
+	font-size: 1.2em;
+	text-transform: none;
+	border: 2px solid #ffffff;
+	border-top: none;
+}
+#nav li:hover ul { /* lists nested under hovered list items */
+	left: auto;
+}
+#nav li.last:hover ul { 
+	right:0;
+}
+
+
+
+/* footer */
+#footer {
+	clear:both;
+  padding: 10px;
+	font-size: 1.1em;
+	background-color: burlywood;
+  color: #FFFFFF;
+	border-top: 5px solid royalblue;
+  overflow: hidden;
+}
+#footer p {
+	text-align:center;
+}
+#footer #anysurfer {
+	float:right;margin-left: 10px;
+	border:none;}
+#footer a {text-decoration: none;color:#FFFFFF;}
+
+
+
+/*========================= SUBNAV ============================*/
+#wrapper #subnav { 
+	float:left; 
+	width:160px;	
+	margin:10px 0 15px 7px;  
+}
+#wrapper #contentwrapper { margin-left: 5px;}
+
+#subnav {
+  display: none;
+}
+
+.alert {
+	font-weight:bold;
+	color:red;
+}
+
+/* Lingulist Stuff */
+
+#normaltable{
+}
+#normaltable a{
+    color: DarkBlue;
+    font-weight:normal;
+}
+#normaltable a:hover{
+  text-decoration: underline;
+}
+#normaltable img{
+    width:90%;
+}
+#normaltable img.active{
+    width:50%;
+}
+#imgtable {
+    margin-left:auto;
+    margin-right:auto;
+}
+#imgtable td{
+    text-align:center;
+}
+
+#content ul li{
+	list-style:disc;
+	margin-left: 20px;
+	padding:0px 10px 10px 0px;
+}
+#content td{
+	float:justify;
+}
+
+
+.footer_right {
+  float: right;
+  padding-left: 20px;
+  padding-right:20px;
+  
+}
+.footer_left {
+  padding-left: 20px;
+  padding-right:20px;
+  float: left;
+}
+
+.footer_center {
+  padding-left: 20px;
+  padding-right:20px;
+  float: left;
+}
+
+
+.footer {
+  overflow: hidden;
+}
