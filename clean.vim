@@ -74,7 +74,7 @@
 %s/Mvbook/Book/
 %s/Online/Misc/
 g/Owner\s* = /d
-g/Timestamp\* = /d
+g/Timestamp\s* = /d
 %s@  Title\s* = {\(.*\)},\n  Subtitle\s* = {@  Title = {\1. 
 %s@  Mainsubtitle = {\(.*\)},\n  Maintitle = {\(.*\)}@  Maintitle = {\2. \1}
 %s/Software/Book/
@@ -97,5 +97,6 @@ g/Keywords = .*XXX/d
 %s/_url/url/
 
 
+g/Keywords/d
 
 

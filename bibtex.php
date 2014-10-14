@@ -84,7 +84,7 @@ else if(isset($_GET['key'])){
 <a href="http://www.bmbf.de/"><img width="120px" src="http://upload.wikimedia.org/wikipedia/commons/5/5c/BMBF_Logo.svg" alt="BMBF" /></a>
  </div>
 <div class="footer_center">
- <p>Last updated on Oct. 01, 2014, 09:31 CET</p>
+ <p>Last updated on Oct. 14, 2014, 09:58 CET</p>
  <p>
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.</p><br>
 <p>
