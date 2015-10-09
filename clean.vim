@@ -69,6 +69,8 @@
 %s@Eprint\s* = {\(.*\)},\n  Eprinttype\s* = {GoogleBooks}@url = {http://books.google.de/books?id=\1}
 %s@Eprint\s* = {\(.*\)},\n  Eprinttype\s* = {googlebooks}@url = {http://books.google.de/books?id=\1}
 %s@Eprint\s* = {\(.*\)},\n  Eprinttype\s* = {ia}@url = {http://archive.org/details/\1}
+%s@Eprint\s* = {\(.*\)},\n  Eprinttype\s* = {[Uu][Rr][Ll]}@url = {\1}
+
 %s/{\([A-Z]+\)}/\1/ge
 %s/Reference/Book/
 %s/Mvbook/Book/
@@ -94,9 +96,10 @@ g/Keywords = .*XXX/d
 
 %s/\\hana //ge
 %s/\\hanb //ge
-%s/_url/url/
+%s/_url/Url/
 
 
-g/Keywords/d
-
+g/Keywords.*XXX/d
+%s/^  Ee /  Doi  /
+g/Doi\s*=\s
 

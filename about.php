@@ -53,7 +53,7 @@ The work on this bibliographical database started when I was a member of the
 <a href="http://www.evoclass.de">EvoClass</a> research project at Heinrich
 Heine University Düsseldor. 
 It is actually nothing more than a collection of
-all titles (currently 1978 entries) which I stumbled over when pursuing my
+all titles (currently 2043 entries) which I stumbled over when pursuing my
 research in quantitative historical linguistics.  The database thus mainly
 contains work on lexicostatistics, methodological aspects of the comparative
 method, and the application of biological methods in historical linguistics. 
@@ -63,12 +63,12 @@ method, and the application of biological methods in historical linguistics.
 <tr><td></td></tr>
 <tr>
   <td style="background-color:#ffa600;width:100px"><b>Release:</b></td>
-  <td> 0.11 </td>
+  <td> 0.12 </td>
   <td></td>
 </tr>
 <tr>
   <td style="background-color:#ffa600;width:100px"><b>Date:</b></td>
-  <td> August 12, 2015</td>
+  <td> October 10, 2015</td>
   <td></td>
 </tr>
 <tr>
