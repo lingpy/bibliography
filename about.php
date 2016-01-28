@@ -51,9 +51,8 @@
 <p>
 The work on this bibliographical database started when I was a member of the
 <a href="http://www.evoclass.de">EvoClass</a> research project at Heinrich
-Heine University Düsseldor. 
-It is actually nothing more than a collection of
-all titles (currently 2043 entries) which I stumbled over when pursuing my
+Heine University Düsseldorf. It is actually nothing more than a collection of
+all titles (currently 2267 entries) which I stumbled over when pursuing my
 research in quantitative historical linguistics.  The database thus mainly
 contains work on lexicostatistics, methodological aspects of the comparative
 method, and the application of biological methods in historical linguistics. 
@@ -63,12 +62,12 @@ method, and the application of biological methods in historical linguistics.
 <tr><td></td></tr>
 <tr>
   <td style="background-color:#ffa600;width:100px"><b>Release:</b></td>
-  <td> 0.12 </td>
+  <td> 0.14 </td>
   <td></td>
 </tr>
 <tr>
   <td style="background-color:#ffa600;width:100px"><b>Date:</b></td>
-  <td> October 10, 2015</td>
+  <td> January 28, 2016</td>
   <td></td>
 </tr>
 <tr>
@@ -82,28 +81,26 @@ method, and the application of biological methods in historical linguistics.
 
  </div>
  </div>
- <div id="footer">
-<div class="footer_left">
-<a href="http://www.hhu.de/"><img width="120px" src="http://upload.wikimedia.org/wikipedia/commons/0/07/Logo_HHU_DUS.svg" alt="HHUD" /></a>
+ <div id="footer" style="display:flex">
+<div>
+<a href="http://www.hhu.de/">
+<img width="120px" src="http://upload.wikimedia.org/wikipedia/commons/0/07/Logo_HHU_DUS.svg" alt="HHUD" /></a>
  </div>
- <div class="footer_left">
+ <div>
 <a href="http://www.bmbf.de/"><img width="120px" src="http://upload.wikimedia.org/wikipedia/commons/5/5c/BMBF_Logo.svg" alt="BMBF" /></a>
  </div>
-<div class="footer_center">
- <p>Last updated on May 23, 2015</p>
+<div>
+ <p>Last updated on Jan. 28, 2016, 09:24 CET</p>
  <p>
-This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.</p><br>
-<p>
-   <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img
-		alt="Creative Commons License" style="border-width:0;width:80px;"
-		src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a> </p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">This website</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Johann-Mattis List</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+      </p>
 </div>
-<div class="footer_right">
+<div>
 <a href="http://erc.europa.eu/"><img width="80px" src="http://quanthistling.info/theme/qhl/images/logo_erc.png" alt="ERC" /></a>
 
 
 </div>
-<div class="footer_right">
+<div>
 <a href="http://www.uni-marburg.de/"><img width="120px" src="http://upload.wikimedia.org/wikipedia/commons/9/9c/Uni_Marburg_Logo.svg?uselang=de" alt="PUD" /></a>
 </div>
  </div><!-- end footer -->
