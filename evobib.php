@@ -295,7 +295,7 @@ else {
 <a href="http://www.bmbf.de/"><img width="120px" src="http://upload.wikimedia.org/wikipedia/commons/5/5c/BMBF_Logo.svg" alt="BMBF" /></a>
  </div>
 <div>
- <p>Last updated on Feb. 21, 2018, 06:41 CET</p>
+ <p>Last updated on Jul. 25, 2018, 08:20 CET</p>
  <p>
       <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">This website</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Johann-Mattis List</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
       </p>

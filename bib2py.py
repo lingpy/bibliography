@@ -141,7 +141,6 @@ for entry in entries:
 
 
                     bibtex = bibtex[:-2] + '\n}\n'
-	            #bibtex = bibtex.replace(',\n}','\n\n}')
 	            c.execute('update bibliography set bibtex = ? where key = "'+this_key+'";',(bibtex,))
                     count += 1
                     bibout.write(bibtex+'\n')
