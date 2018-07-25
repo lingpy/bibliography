@@ -11,6 +11,7 @@ import sqlite3
 from re import sub,findall,DOTALL
 from sys import argv
 import os
+import codecs
 
 # These are the parameters, which are used in the current implementation.
 parameters = [
@@ -87,10 +88,12 @@ print "...done."
 count = 0
 print "Second run, converting to sqlite..."
 # Start the main loop
+bibout = codecs.open('evobib-converted.bib', 'w', 'utf-8')
+etypes = set()
 for entry in entries:
 	this_type = findall('\n@(.*?){',entry)[0].lower()
 	this_key = findall('\n@.*?{(.*?),',entry)[0]
-        if 'XXX' in this_key or 'xxx' in this_key or 'submitted' in this_key or this_type.lower() in ['set','customa','customb', 'lecture'] or 'sole' in this_key or 'lingpy' in this_key or this_key[-1] not in '0123456789abcdef':
+        if 'XXX' in this_key or 'xxx' in this_key or 'submitted' in this_key or this_type.lower() in ['language', 'set','customa','customb', 'lecture'] or 'sole' in this_key or 'lingpy' in this_key or this_key[-1] not in '0123456789abcdefghijklmn':
             pass
         else:
 	    this_entry_dict = {}
@@ -123,24 +126,28 @@ for entry in entries:
                         if param == 'Doi' and param in this_entry_dict:
                             if not this_entry_dict[param].startswith('http'):
                                 this_entry_dict[param] = 'http://dx.doi.org/'+this_entry_dict[param]
+            if len(this_entry_dict) > 1:
+                if this_type.strip() and this_type not in ['unpublished']:
+                    etypes.add(this_type)
+	            bibtex = '@'+this_type+'{'+this_key+',\n'
+	            c.execute('insert into bibliography(key,type) values("'+this_key+'","'+this_type+'");')
+	            for key in this_entry_dict.keys():
+                        if key != "crossref":
+	                    bibtex = bibtex+'    '+key+' = {'+this_entry_dict[key]+'},\n'
+	                    c.execute('update bibliography set '+key.lower()+' = ? where key = "'+this_key+'";',(this_entry_dict[key],))
+                        else:
+                            bibtex = bibtex+'    '+key+' = {'+globaldict[this_key]['crossref']+'},\n'
+	            	c.execute('update bibliography set booktitle = ? where key = "'+this_key+'";',(this_entry_dict[key],))
 
-            
-	    bibtex = '@'+this_type+'{'+this_key+',\n'
-	    c.execute('insert into bibliography(key,type) values("'+this_key+'","'+this_type+'");')
-	    for key in this_entry_dict.keys():
-                if key != "crossref":
-	    	    bibtex = bibtex + key + ' = {'+this_entry_dict[key]+'},\n'
-	    	    c.execute('update bibliography set '+key.lower()+' = ? where key = "'+this_key+'";',(this_entry_dict[key],))
-                else:
-                    bibtex = bibtex + key + ' = {'+globaldict[this_key]['crossref']+'},\n'
-	    	    c.execute('update bibliography set booktitle = ? where key = "'+this_key+'";',(this_entry_dict[key],))
 
-
-	    bibtex = bibtex + '}'
-	    bibtex = bibtex.replace(',\n}','\n\n}')
-	    c.execute('update bibliography set bibtex = ? where key = "'+this_key+'";',(bibtex,))
-            count += 1
+                    bibtex = bibtex[:-2] + '\n}\n'
+	            #bibtex = bibtex.replace(',\n}','\n\n}')
+	            c.execute('update bibliography set bibtex = ? where key = "'+this_key+'";',(bibtex,))
+                    count += 1
+                    bibout.write(bibtex+'\n')
 conn.commit()
 print "Done, data stored in " + db_name + ".sqlite3."		
 print "Currently, there are {0} entryies.".format(count)
-
+bibout.close()
+for etype in etypes:
+    print(etype)

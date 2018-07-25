@@ -49,25 +49,30 @@
 <tr>
 <td colspan=2>
 <p>
-The work on this bibliographical database started when I was a member of the
-<a href="http://www.evoclass.de">EvoClass</a> research project at Heinrich
-Heine University Düsseldorf. It is actually nothing more than a collection of
-all titles (currently 2267 entries) which I stumbled over when pursuing my
-research in quantitative historical linguistics.  The database thus mainly
-contains work on lexicostatistics, methodological aspects of the comparative
-method, and the application of biological methods in historical linguistics. 
+The work on this bibliographical database started when I was a member of the 
+<a href="http://www.evoclass.de">EvoClass</a> research project at Heinrich Heine
+University Düsseldorf. It is actually nothing more than a collection of all
+titles (currently 3025 entries, few have been removed, as they turned out to be
+invalid) which I stumbled over when pursuing my research in quantitative
+historical linguistics. The database thus mainly contains work on
+lexicostatistics, methodological aspects of the comparative method, and the
+application of biological methods in historical linguistics.
+ 
+With release 0.21, all new releases of the database (in form of BibTex files) will be uploaded to <a href="https://zenodo.org">Zenodo</a>, 
+where they can be accessed from here: <a href="https://doi.org/10.5281/zenodo.1181952"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1181952.svg" alt="DOI" style="width:200px"></a>.
+
 </p>
 </td>
 </tr>
 <tr><td></td></tr>
 <tr>
   <td style="background-color:#ffa600;width:100px"><b>Release:</b></td>
-  <td> 0.14 </td>
+  <td> 0.21 </td>
   <td></td>
 </tr>
 <tr>
   <td style="background-color:#ffa600;width:100px"><b>Date:</b></td>
-  <td> January 28, 2016</td>
+  <td> February 21, 2018</td>
   <td></td>
 </tr>
 <tr>
@@ -90,7 +95,7 @@ method, and the application of biological methods in historical linguistics.
 <a href="http://www.bmbf.de/"><img width="120px" src="http://upload.wikimedia.org/wikipedia/commons/5/5c/BMBF_Logo.svg" alt="BMBF" /></a>
  </div>
 <div>
- <p>Last updated on Jan. 28, 2016, 09:24 CET</p>
+ <p>Last updated on Feb. 21, 2018, 06:41 CET</p>
  <p>
       <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">This website</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Johann-Mattis List</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
       </p>

@@ -92,7 +92,9 @@ g/Timestamp\s* = /d
 %s/?\./?/ge
 %s/Eventtitle/Booktitle/
 %s/Maintitle/Booktitle/
-g/Keywords = .*XXX/d
+g/Keywords\s* = .*XXX/d
+g/Keywords\s* = .*_usesLingPy/d
+g/Keywords\s* = .*_quotesConcepticon/d
 
 %s/\\hana //ge
 %s/\\hanb //ge
